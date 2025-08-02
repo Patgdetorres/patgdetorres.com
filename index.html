@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fiber Optic Internet</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="media-queries.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="favicon.ico">
+</klllhead>
+
+<body>
+
+<!------------- SPLASH SECTION -------------------->
+
+<section id="splash">  
+    <div id="navbar">
+        <div class="container">  <!-- container keeps everything aligned and centered no matter what the window size -->
+            <ul  id="menu">
+                <!-- button class provides button-like appearance and scrolling javascript (see bottom of html code) -->
+                <li><a href="#overview" class="button">Overview</a></li>
+                <li><a href="#info" class="button">More Information</a></li>
+                   <li><a href="#video" class="button">Video Explanation</a></li>
+            </ul>
+        </div> <!-- end container -->
+    </div> <!-- end navbar -->
+    <!-- Title page -->
+<div id="title-page"> <!-- Used to style the title and subtitle -->
+    <div class="container"> 
+        <h1> What is<br>Fiber Internet?</h1>
+        <h3>by Patricio Gonzalez De Torres</h3>
+    </div> <!-- end container -->
+</div> <!-- end title-page -->
+</section> <!-- end SPLASH section -->
+
+<!------------- OVERVIEW SECTION -------------------->
+
+<section id="overview">
+    <h1>Fiber Optic Internet</h1>
+   
+    <h2><em>Overview</em></h2>
+    <!-- <p><a href="index.html">Overview</a> | <a href="media.html">Media</a> | <a href="author.html">Author</a></p> -->
+<!--end header-->
+
+
+
+
+<h1>Information about Fiber Optic Internet </h1>
+<h3><i>Faster internet may be coming to your neighborhood very soon.</i></h3>
+
+<hr>
+
+<h2>What Is Fiber Optic Internet?</h2>
+<p>&emsp; Fiber optic internet is different from our normal broadband internet because of how the data is physically carried, and is capable of reaching speeds of up to 940Mbs (Megabits per second). Fiber internet is able to achieve this by transferring your data through very thin optical fibers made of glass that can transmit data at 70% the speed of light, in a binary format. Fiber cables provide a wider bandwidth at high speeds that provides very minimal latency and buffering. 
+<br>&emsp; Compared to traditional cable, fiber internet has very similar download and upload speeds. In speaking about security, fiber optic cables don't radiate a signal making it near impossible to extract data during a transfer. Most fiber optic cables are being built into the ground, making them very environmentally resistant. 
+</p>
+</section><!--end OVERVIEW section -->
+
+
+<!------------- VIDEO SECTION -------------------->
+
+<section id="info">
+    <h2>What Are The Benefits of Fiber Internet?</h2>
+    <img src="images/fiber03.jpg" alt="Fiber Compare" width="295" height="171">
+
+        <p>&emsp; According to Century Link, Fiber Internet is the perfect choice for large family households, as it has greater bandwidth than its predecessors. 
+            <blockquote>"Fiber internet is a great choice for high-bandwidth households where multiple users want to stream video, play online games, back up data, or send and receive large files at the same time, especially over long distances."
+            </blockquote>
+
+        Below is a table comparing various speeds of other types of internet according to Century Link:
+        <table border="1" cellpadding="12" cellspacing="0">
+            <tr>
+                <th>Connection Type</th>
+                <th>Speed</th>
+            </tr>
+            <tr>
+                <th>Dial-up</th>
+                <td>11 days</td>
+            </tr> 
+            <tr>
+                <th>DSL</th>
+                <td>1 - 14 Hours</td>
+            </tr>
+            <tr>
+                <th>Cable</th>
+                <td>1 minute - 14 Hours</td>
+            </tr>
+            <tr>
+                <th>Fiber</th>
+                <td>About 1 minute</td>
+            </tr>         
+        </table>
+
+        
+        
+        <br>&emsp; In short, some benefits of Fiber Internet are: 
+            <ul> 
+                <li>Faster download and upload speeds</li>
+                <li>No signal radiates from the cables making them more secure</li>
+                <li>Cables are built into the ground making them more resistant to the elements</li>
+                <li>They provide a wider bandwidth allowing large family households to all work, play, and watch all at the same time.</li>
+            </ul>
+        
+            <hr>
+        <!--end content-->
+</section>
+
+<!------------- DISCOGRAPHY SECTION -------------------->
+
+<section id="video">
+    <h1>More Information!</h1>
+    <p><iframe width="853" height="480" src="https://www.youtube.com/embed/G1Ke-H8I1uk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+  Hear more information on how Fiber Optic Internet works from Techquickie!</p>
+</section> <!-- end DISCOGRAPHY section
+
+<!------------- FOOTER SECTION -------------------->
+
+<section id="footer">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</section> <!-- end FOOTER section -->
+<!-- JAVASCRIPT CODE -->
+<!--jquery required for scrolling effect -->
+<script src="js/jquery.js"></script>
+<!-- Scrolling navigation script by Geo Miller glmiller@pic.fsu.edu -->  
+<script type='text/javascript'>
+jQuery(document).ready(function () {
+  jQuery('.button').click(function() {
+    targetName = jQuery(this).attr('href');
+    targetLocation = jQuery(targetName).offset().top;
+    jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
+    return false;
+  });
+});
+</script>
+</body>
+</html>
