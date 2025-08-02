@@ -70,7 +70,7 @@ const ProgrammingPortfolio = () => {
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/80 backdrop-blur-lg border-b border-gray-800' : ''}`}>
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-            {'<Dev/>'}
+            {'<PGT>'}
           </div>
           <div className="hidden md:flex space-x-8">
             {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
