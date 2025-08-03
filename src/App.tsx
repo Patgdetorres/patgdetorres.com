@@ -88,11 +88,12 @@ const ProgrammingPortfolio = () => {
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-8 animate-fade-in">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
+              <span className="text-white">Hi, I'm</span>
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
-                Full Stack
+                Pat
               </span>
               <br />
-              <span className="text-white">Developer</span>
+              
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
               Crafting digital experiences with cutting-edge technologies
@@ -255,7 +256,7 @@ const ProgrammingPortfolio = () => {
       <footer className="py-8 px-6 border-t border-gray-800">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-gray-400 mb-4">
-            © 2025 Your Name. Crafted with passion and caffeine.
+            © 2025 Patricio Gonzalez De Torres
           </p>
           <div className="flex justify-center space-x-6">
             {[
