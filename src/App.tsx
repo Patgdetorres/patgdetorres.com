@@ -88,7 +88,8 @@ const ProgrammingPortfolio = () => {
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-8 animate-fade-in">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
-              <span className="text-white">Hi, I'm</span>
+              <span className="text-white">Hi, I'm </span>
+              <br />
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
                 Pat
               </span>
