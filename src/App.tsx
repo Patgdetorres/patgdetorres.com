@@ -269,9 +269,9 @@ const ProgrammingPortfolio = () => {
           </p>
           <div className="flex justify-center space-x-6">
             {[
-              { icon: Github, href: '#' },
-              { icon: Linkedin, href: '#' },
-              { icon: Mail, href: '#' }
+              { icon: Github, href: 'https://github.com/Patgdetorres' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/patgdetorres/' },
+              { icon: Mail, href: 'mailto:patgdetorres@gmail.com' }
             ].map(({ icon: Icon, href }, index) => (
               <a
                 key={index}
