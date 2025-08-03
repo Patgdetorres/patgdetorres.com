@@ -52,7 +52,7 @@ const ProgrammingPortfolio = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden">
+    <div id="top" className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden">
       {/* Animated background elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div 
@@ -69,9 +69,12 @@ const ProgrammingPortfolio = () => {
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/80 backdrop-blur-lg border-b border-gray-800' : ''}`}>
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <a 
+            href="#top" 
+            className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300 cursor-pointer"
+          >
             {'<PGT>'}
-          </div>
+          </a>
           <div className="hidden md:flex space-x-8">
             {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
               <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-blue-400 transition-colors duration-300 relative group">
@@ -88,10 +91,10 @@ const ProgrammingPortfolio = () => {
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-8 animate-fade-in">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
-              <span className="text-white">Hi, I'm </span>
+              <span className="text-white">Nice to meet you,</span>
               <br />
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
-                Pat
+                I'm Pat
               </span>
               <br />
               
@@ -104,25 +107,30 @@ const ProgrammingPortfolio = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <button className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+            <a 
+              href="/Patgdetorres_CV.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-block text-center"
+            >
               <span className="flex items-center gap-2">
-                View My Work
+                Check Out My Resume
                 <ExternalLink className="w-5 h-5 group-hover:rotate-45 transition-transform duration-300" />
               </span>
-            </button>
-            <button className="group border-2 border-gray-600 hover:border-blue-400 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-blue-400/10">
+            </a>
+            {/* <button className="group border-2 border-gray-600 hover:border-blue-400 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-blue-400/10">
               <span className="flex items-center gap-2">
                 Get In Touch
                 <Mail className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
               </span>
-            </button>
+            </button> */}
           </div>
 
           <div className="flex justify-center space-x-6">
             {[
-              { icon: Github, href: '#' },
-              { icon: Linkedin, href: '#' },
-              { icon: Mail, href: '#' }
+              { icon: Github, href: 'https://github.com/Patgdetorres' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/patgdetorres/' },
+              { icon: Mail, href: 'mailto:patgdetorres@gmail.com' }
             ].map(({ icon: Icon, href }, index) => (
               <a
                 key={index}
