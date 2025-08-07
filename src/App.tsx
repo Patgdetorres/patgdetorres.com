@@ -25,7 +25,7 @@ const ProgrammingPortfolio = () => {
 
   const skills = [
     { name: 'Frontend', icon: Globe, color: 'from-blue-500 to-cyan-500', tech: ['React', 'Vue.js', 'TypeScript'] },
-    { name: 'Backend', icon: Database, color: 'from-green-500 to-emerald-500', tech: ['Node.js', 'Python', 'PostgreSQL'] },
+    { name: 'Backend', icon: Database, color: 'from-green-500 to-emerald-500', tech: ['Node.js', 'Python', 'SQL'] },
     { name: 'Mobile', icon: Smartphone, color: 'from-purple-500 to-pink-500', tech: ['React Native', 'Flutter'] },
     { name: 'DevOps', icon: Code, color: 'from-orange-500 to-red-500', tech: ['Docker', 'AWS', 'CI/CD'] }
   ];
@@ -47,7 +47,8 @@ const ProgrammingPortfolio = () => {
       title: 'Analytics Dashboard',
       description: 'Interactive data visualization platform for business intelligence',
       tech: ['React', 'D3.js', 'Firebase'],
-      gradient: 'from-purple-600 to-pink-600'
+      gradient: 'from-purple-600 to-pink-600',
+      url: "https://bitbucket.org/patdetorresfsu/lis4368/src/master/p2/"
     }
   ];
 
@@ -76,7 +77,7 @@ const ProgrammingPortfolio = () => {
             {'<PGT>'}
           </a>
           <div className="hidden md:flex space-x-8">
-            {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
+            {['About', 'Skills', 'Projects'].map((item) => (
               <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-blue-400 transition-colors duration-300 relative group">
                 {item}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full" />
@@ -126,6 +127,8 @@ const ProgrammingPortfolio = () => {
             </button> */}
           </div>
 
+          
+
           <div className="flex justify-center space-x-6">
             {[
               { icon: Github, href: 'https://github.com/Patgdetorres' },
@@ -147,6 +150,53 @@ const ProgrammingPortfolio = () => {
           <ChevronDown className="w-8 h-8 text-gray-400" />
         </div>
       </section>
+
+
+      {/* About Section */}
+      <section id="about" className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+            <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+              About Me
+            </span>
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Text Content - Fades in from left */}
+            <div className="space-y-6 animate-fade-in-left">
+              <div className="text-lg text-gray-300 leading-relaxed space-y-4">
+                <p>
+                I'm software developer and QA engineer with a passion for building, testing, and creating applications that deliver seamless user experiences, constantly searching for more topics and technologies to learn about.
+                </p>
+                <p>
+                With a background in Information Technology and hands-on expertise in mobile development, cloud-based testing, and UI/UX improvements, I’ve worked on projects spanning from Appium-driven automation on AWS Device Farm to modernizing app interfaces inspired by platforms like TikTok and Instagram. My language experience extends to Python, Javascript, C#, and Java. Beyond development, I’m exploring the networking, front-end design, and database maintanence. 
+                </p>
+                <p>
+                As a proud Florida State University and Christopher Columbus Alumni, I'm hoping to work closely with some of my former coulleges, or create new connections with other fellow alumnus!
+                </p>
+              </div>
+              </div>
+              
+              
+
+            {/* Image - Fades in from right */}
+            <div className="flex justify-center lg:justify-end animate-fade-in-right">
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+                <div className="relative overflow-hidden rounded-2xl border border-gray-700/50 group-hover:border-blue-500/50 transition-all duration-500">
+                  <img
+                    src= "/IMG_5982(1).JPG"
+                    alt="Pat"
+                    className="w-80 h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       
 
       {/* Skills Section */}
       <section id="skills" className="py-20 px-6">
@@ -191,15 +241,21 @@ const ProgrammingPortfolio = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-6">
+      <section id="projects">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
             <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
               Featured Projects
             </span>
+            <br></br>
+            <br></br>
+            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
+                Under Construction
+              </span>
           </h2>
+
           
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div
                 key={project.title}
@@ -232,11 +288,11 @@ const ProgrammingPortfolio = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className="relative p-12 rounded-3xl bg-gradient-to-br from-blue-600/20 to-purple-600/20 backdrop-blur-sm border border-blue-500/30">
@@ -259,7 +315,7 @@ const ProgrammingPortfolio = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-gray-800">

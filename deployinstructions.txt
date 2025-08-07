@@ -1,0 +1,5 @@
+commit and push all changes to main
+
+npm run deploy to merge
+
+npm start to test locally
