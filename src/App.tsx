@@ -48,7 +48,6 @@ const ProgrammingPortfolio = () => {
       description: 'Interactive data visualization platform for business intelligence',
       tech: ['React', 'D3.js', 'Firebase'],
       gradient: 'from-purple-600 to-pink-600',
-      url: "https://bitbucket.org/patdetorresfsu/lis4368/src/master/p2/"
     }
   ];
 
