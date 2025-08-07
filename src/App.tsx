@@ -100,9 +100,9 @@ const ProgrammingPortfolio = () => {
               
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              Crafting digital experiences with cutting-edge technologies
+              Full Stack Developer and QA Engineer
               <br />
-              <span className="text-blue-400">Turning ideas into reality, one line of code at a time</span>
+              <span className="text-blue-400">Here's what I've done</span>
             </p>
           </div>
           
