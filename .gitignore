@@ -23,3 +23,5 @@ yarn-error.log*
 # cache files
 .cache/
 *.tsbuildinfo
+
+deployinstructions.txt

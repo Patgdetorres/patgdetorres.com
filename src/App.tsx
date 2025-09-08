@@ -168,10 +168,10 @@ const ProgrammingPortfolio = () => {
                 I'm software developer and QA engineer with a passion for building, testing, and creating applications that deliver seamless user experiences, constantly searching for more topics and technologies to learn about.
                 </p>
                 <p>
-                With a background in Information Technology and hands-on expertise in mobile development, cloud-based testing, and UI/UX improvements, I’ve worked on projects spanning from Appium-driven automation on AWS Device Farm to modernizing app interfaces inspired by platforms like TikTok and Instagram. My language experience extends to Python, Javascript, C#, and Java. Beyond development, I’m exploring the networking, front-end design, and database maintanence. 
+                With a background in Information Technology and hands-on expertise in full stack development, cloud-based testing, and UI/UX improvements, I’ve worked on projects spanning from Appium driven automation on AWS Device Farm to modernizing app interfaces inspired by platforms like TikTok and Instagram. My language experience extends to Python, Javascript, C#, and Java. Beyond development, I’m exploring networking, front-end design, and database maintenance.
                 </p>
                 <p>
-                As a proud Florida State University and Christopher Columbus Alumni, I'm hoping to work closely with some of my former coulleges, or create new connections with other fellow alumnus!
+                As a proud Florida State University and Christopher Columbus Alumni, I'm hoping to work closely with some of my former colleagues, or create new connections with other fellow alumnus!
                 </p>
               </div>
               </div>
